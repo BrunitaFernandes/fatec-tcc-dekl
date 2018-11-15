@@ -4,9 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace DEKL.CP.Infra.CrossCutting.Identity.Maps
 {
-    public class ClaimMap : EntityTypeConfiguration<Claim>
+    public class ClaimsMap : EntityTypeConfiguration<Claims>
     {
-        public ClaimMap()
+        public ClaimsMap()
         {
             //Table
             ToTable("AspNetClaims");

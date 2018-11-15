@@ -12,7 +12,7 @@ namespace DEKL.CP.Infra.CrossCutting.Identity.ViewModels
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirmação da nova senha")]
-        [Compare("NewPassword")]
+        [Compare("NewPassword", ErrorMessage = "As senhas não se coincidem.")]
         public string ConfirmPassword { get; set; }
     }
 }

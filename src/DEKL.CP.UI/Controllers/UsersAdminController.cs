@@ -39,7 +39,6 @@ namespace DEKL.CP.UI.Controllers
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(user.Id);
                 var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code }, protocol: Request.Url?.Scheme);
                 await _userManager.SendEmailAsync(user.Id, "Confirme sua Conta", $"Por favor confirme sua conta clicando neste link: {callbackUrl}");
-                ViewBag.Link = callbackUrl;
                 return View("DisplayEmail");
             }
 

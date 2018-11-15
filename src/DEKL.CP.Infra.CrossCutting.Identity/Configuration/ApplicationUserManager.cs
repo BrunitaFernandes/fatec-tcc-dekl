@@ -12,7 +12,7 @@ namespace DEKL.CP.Infra.CrossCutting.Identity.Configuration
     {
         public ApplicationUserManager(IUserStore<ApplicationUser, int> store)
         : base(store)
-        {
+        {   
             // Configurando validator para nome de usuario
             UserValidator = new UserValidator<ApplicationUser, int>(this)
             {

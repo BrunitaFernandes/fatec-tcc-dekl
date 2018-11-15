@@ -11,11 +11,12 @@
             {
                 @Html.AntiForgeryToken()
                 <hr />
+                @Html.ValidationMessage("Error", new { @class = "text-danger" })
                 <div>
                     Provedor de Autenticação em Dois Fatores:
                     @Html.DropDownListFor(model => model.SelectedProvider, Model.Providers)
                     @Html.HiddenFor(m => m.UserId)
-                    <input type="submit" value="Enviar" class="btn btn-info" />
+                    <input type="submit" value="Enviar" class="btn btn-outline-info" />
                 </div>
             }
         </section>

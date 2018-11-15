@@ -112,6 +112,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\ApplicationCookieIdentityValidator.cs" />
+    <Compile Include="Configuration\ApplicationCookieIdentityValidator2.cs" />
     <Compile Include="Configuration\ApplicationRoleManager.cs" />
     <Compile Include="Configuration\ApplicationUserManager.cs" />
     <Compile Include="Configuration\ClaimsIdentityExtensions.cs" />
@@ -119,18 +121,18 @@
     <Compile Include="Configuration\ApplicationSignInManager.cs" />
     <Compile Include="Configuration\SmsService.cs" />
     <Compile Include="Maps\ApplicationUserMap.cs" />
-    <Compile Include="Maps\ClaimMap.cs" />
+    <Compile Include="Maps\ClaimsMap.cs" />
     <Compile Include="Maps\ClientMap.cs" />
-    <Compile Include="Models\Claim.cs" />
+    <Compile Include="Models\Claims.cs" />
     <Compile Include="Models\Client.cs" />
-    <Compile Include="Models\CustomRoleStore.cs" />
-    <Compile Include="Models\CustomUserStore.cs" />
-    <Compile Include="ViewModels\AddPhoneNumberViewModel.cs" />
-    <Compile Include="ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Models\CustomRole.cs" />
+    <Compile Include="Models\CustomRoleStore.cs" />
     <Compile Include="Models\CustomUserClaim.cs" />
     <Compile Include="Models\CustomUserLogin.cs" />
     <Compile Include="Models\CustomUserRole.cs" />
+    <Compile Include="Models\CustomUserStore.cs" />
+    <Compile Include="ViewModels\AddPhoneNumberViewModel.cs" />
+    <Compile Include="ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModels\FactorViewModel.cs" />
     <Compile Include="ViewModels\ForgotPasswordViewModel.cs" />
     <Compile Include="Models\ApplicationUser.cs" />

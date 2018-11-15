@@ -239,7 +239,7 @@ namespace DEKL.CP.UI.Controllers
             (
                 new AuthenticationProperties {IsPersistent = isPersistent},
                 // Criação da instancia do Identity e atribuição dos Claims
-                await user.GenerateUserIdentityAsync(_userManager, isPersistent)
+                await user.GenerateUserIdentityAsync(_userManager)
             );
         }
 
